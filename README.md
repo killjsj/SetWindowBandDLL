@@ -2,7 +2,8 @@
 get this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=**&MODE=**  
 replace *** to hwnd and int  
 #shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
-#ZBID:```enum ZBID
+#ZBID:```C++
+enum ZBID
 {
     ZBID_DEFAULT = 0,
     ZBID_DESKTOP = 1,
@@ -25,4 +26,4 @@ replace *** to hwnd and int
     ZBID_LOCK = 17,
     ZBID_ABOVELOCK_UX = 18,
 };
- ```
+```
