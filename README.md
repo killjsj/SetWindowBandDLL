@@ -1,9 +1,8 @@
-WHEN injectdll how to call SetWindowBand?  
+#WHEN injectdll how to call SetWindowBand?  
 get this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=**&MODE=**  
- replace *** to hwnd and int  
- shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
-ZBID:```
-enum ZBID
+replace *** to hwnd and int  
+#shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
+#ZBID:```enum ZBID
 {
     ZBID_DEFAULT = 0,
     ZBID_DESKTOP = 1,
