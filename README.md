@@ -1,8 +1,10 @@
-#WHEN injectdll how to call SetWindowBand?  
-get this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=**&MODE=**  
-replace *** to hwnd and int  
-#shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
-#ZBID:```C++
+# WHEN injectdll how to call SetWindowBand?  
+1.after your inject,you should press WIN key to call `NtUserEnableIAMAccessHook`  
+GET this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=**&MODE=** to set zband  
+replace *** to hwnd
+# shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
+#MODE:
+```C++
 enum ZBID
 {
     ZBID_DEFAULT = 0,
