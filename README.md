@@ -1,9 +1,9 @@
 # WHEN injectdll how to call SetWindowBand?  
 1.after your inject,you should press WIN key to call `NtUserEnableIAMAccessHook`  
-GET this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=**&MODE=** to set zband  
-replace *** to hwnd
-# shutdown:http://127.0.0.1:1145/exit will kill explorer.exe and restart  
-#MODE:
+GET this urL:http://127.0.0.1:1145/call?HWND=***&HWND2=0&MODE=** to set zband  
+replace *** to hwnd HWND2->0
+# shutdown:http://127.0.0.1:1145/exit will FreeLibrary  
+# MODE:
 ```C++
 enum ZBID
 {
@@ -29,6 +29,7 @@ enum ZBID
     ZBID_ABOVELOCK_UX = 18,
 };
 ```
+# thank  
 thanks to:https://gist.github.com/ADeltaX/80d220579400a95c336af0eec372ecb0 gice me soucre code  
 thanks to Wormwaker([bilibili](https://space.bilibili.com/3494361276877525?spm_id_from=333.1387.follow.user_card.click)) let me know zband  
 btw recommend o2 optimize
