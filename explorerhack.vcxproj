@@ -148,6 +148,7 @@
     <ClInclude Include="..\Detours\include\detours.h" />
     <ClInclude Include="..\Detours\include\detver.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="httplib.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="WHY.h" />
   </ItemGroup>
